@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Владимиров](https://up.htmlacademy.ru/adaptive/20/user/978921).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Владимиров](https://htmlacademy.ru/profile/id978921).
 
 ---
 
