@@ -1,10 +1,22 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@font-face {
+  font-family: Open-sans;
+  src: local(Open Sans),
+  url(../fonts/opensans.woff) format("woff"),
+  url(../fonts/opensas.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: Open-sans;
+  src: local(Open Sans),
+  url(../fonts/opensansbold.woff) format("woff"),
+  url(../fonts/opensasbols.woff2) format("woff2");
+  font-weight: 00;
+  font-style: bold;
+  font-display: swap;
+}
+
+
+
