@@ -1,0 +1,34 @@
+@mixin subtitle {
+  color: $black;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin arrow-button {
+  width: 130px;
+  height: 52px;
+  border: 1px solid $whisper;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin zigzag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: url("../img/bg-zigzag-line.svg") repeat-x center / 100%;
+  height: 10px;
+  width: 320px;
+}

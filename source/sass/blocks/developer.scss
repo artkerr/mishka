@@ -1,0 +1,33 @@
+.developer {
+  padding: 10px 30px;
+}
+
+.developer__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 190px;
+  margin: 0 auto;
+}
+
+.developer__text {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+  margin-right: 27px;
+  padding-bottom: 10px;
+}
+
+.developer__icon {
+  fill: $downy;
+  width: 27px;
+  height: 34px;
+
+  &:hover {
+    fill: $puerto-rico-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

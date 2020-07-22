@@ -1,9 +1,8 @@
-// Начните писать стили здесь
-
 @import "global/variables.scss";
 @import "global/mixin.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/container.scss";
 @import "blocks/page.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
@@ -27,3 +26,4 @@
 @import "blocks/color-list.scss";
 @import "blocks/user-data.scss";
 @import "blocks/user-contacts.scss";
+@import "blocks/button.scss";

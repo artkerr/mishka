@@ -1,0 +1,48 @@
+.social {
+  padding: 15px 30px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 260px;
+  border-bottom: 1px solid $whisper-2;
+  padding: 10px 60px;
+  margin: 0;
+}
+
+.social__item {
+  display: flex;
+}
+
+.social__link {
+  margin: auto;
+}
+
+.social__icon {
+  fill: $black;
+
+  &:hover {
+    fill: $puerto-rico-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+}

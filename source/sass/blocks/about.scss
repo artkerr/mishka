@@ -1,0 +1,59 @@
+.about {
+  padding: 0 30px;
+}
+
+.about__title {
+  @include subtitle;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+}
+
+.about__item {
+  width: 260px;
+  min-height: 94px;
+}
+
+.about__text {
+  min-height: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $black;
+}
+
+.about__icon {
+  fill: $downy;
+
+  &--flower {
+    width: 32px;
+    height: 37px;
+  }
+
+  &--money {
+    width: 42px;
+    height: 27px;
+  }
+
+  &--heart {
+    width: 34px;
+    height: 27px;
+  }
+
+  &--ball {
+    width: 35px;
+    height: 34px;
+  }
+
+  &--rocket {
+    width: 55px;
+    height: 23px;
+  }
+
+  &--gift {
+    width: 33px;
+    height: 32px;
+  }
+}
