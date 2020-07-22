@@ -1,6 +1,6 @@
 .category {
   padding-top: 90px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat top center;
+  background: $snow url("../img/hero-mobile@1x.jpg") no-repeat top center;
 }
 
 .category__title {
@@ -19,8 +19,7 @@
 }
 
 .category-list__item {
-  height: 103px;
-  padding: 24px 160px 31px 30px;
+  min-height: 103px;
 
   &--interior {
     background-color: $downy;
@@ -82,6 +81,8 @@
 }
 
 .category-list__link {
+  display: block;
+  padding: 24px 160px 31px 30px;
   color: $white;
   font-size: 19px;
   font-weight: bold;
