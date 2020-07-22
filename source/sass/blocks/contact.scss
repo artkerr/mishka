@@ -1,0 +1,49 @@
+
+.contact__wrapper {
+  padding: 30px;
+}
+
+.contact__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact__name {
+  width: 90px;
+}
+
+.contact__link {
+  color: $charcoal;
+  text-decoration: underline;
+  text-decoration-color: $downy-3;
+}
+
+.contact__text {
+  margin: 0;
+  max-width: 165px;
+}
+
+.contact__iframe-map {
+  border: none;
+  width: 100vw;
+  height: 457px;
+}
+
+.contact__button {
+  padding: 16px 56px;
+  color: $charcoal;
+}
+
+.contact__button-wrapper {
+  padding: 30px;
+}
