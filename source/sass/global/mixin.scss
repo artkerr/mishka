@@ -32,3 +32,10 @@
   height: 10px;
   width: 320px;
 }
+
+@mixin form-label {
+  color: $black;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}

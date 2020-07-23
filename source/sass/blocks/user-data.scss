@@ -1,3 +1,29 @@
+
 .user-data {
-  background-color: transparent;
+  list-style: none;
+  padding: 0;
+}
+
+.user-data__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.user-data__label {
+  @include form-label;
+  padding: 5px 0;
+}
+
+.user-data__input {
+  border: none;
+  border-bottom: 2px solid $black;
+  padding: 10px 0;
+  font-size: 17px;
+  color: $black;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $black-30;
+  }
 }

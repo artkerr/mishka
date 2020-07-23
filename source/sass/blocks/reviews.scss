@@ -27,6 +27,14 @@
   font-style: normal;
 }
 
+.reviews__author-link {
+  color: $charcoal;
+
+  &:hover {
+    color: $puerto-rico-2;
+  }
+}
+
 .reviews__nav {
   display: flex;
   margin-bottom: 30px;

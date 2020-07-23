@@ -1,3 +1,78 @@
 .goods {
+  border: 1px solid $whisper;
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.goods__img {
+  width: 260px;
+  height: 195px;
+}
+
+.goods__info {
+  padding: 28px;
+}
+
+.goods__name {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.goods__link {
+  color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.goods__description {
+  font-size: 13px;
+}
+
+.goods__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $whisper;
+}
+
+.goods__price {
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.goods__button {
   background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.goods__icon {
+  fill: $black;
+  opacity: 0.2;
+
+  &:hover {
+    fill: $downy;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $downy;
+    opacity: 0.3;
+  }
 }
