@@ -1,3 +1,65 @@
-.user-conatcts {
-  background-color: transparent;
+
+.user-contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.user-contacts__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.user-contacts__label {
+  text-transform: uppercase;
+  color: $downy;
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background-color: $downy;
+  }
+}
+
+.user-contacts__input {
+  border: none;
+  border-bottom: 2px solid $black;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: $black-30;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $black-30;
+  }
+}
+
+.user-contacts__textarea {
+  border: 2px solid $black;
+  width: 260px;
+  height: 142px;
+  font-size: 17px;
+  color: $black-30;
+  padding: 10px;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $black-30;
+  }
+}
+
+.user-contacts__icon {
+  fill: $black-20;
+  position: absolute;
+  right: 5px;
+  top: 40px;
 }

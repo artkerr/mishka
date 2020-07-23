@@ -1,3 +1,36 @@
 .form {
   background-color: transparent;
 }
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__legend {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $downy;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background-color: $downy;
+  }
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 15px;
+}
+
+.form__button {
+  padding: 10px 45px;
+}
