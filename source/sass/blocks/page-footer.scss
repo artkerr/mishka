@@ -2,3 +2,20 @@
 .page-footer {
   background-color: $white-smoke;
 }
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

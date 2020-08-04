@@ -9,6 +9,16 @@
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
 
 .goods__img {
@@ -18,6 +28,11 @@
 
 .goods__info {
   padding: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .goods__name {
@@ -48,6 +63,10 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid $whisper;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .goods__price {

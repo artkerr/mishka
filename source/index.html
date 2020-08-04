@@ -8,15 +8,40 @@
   </head>
   <body class="page-body">
     <header class="page-header container">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="site-list visually-hidden">
-          <li class="site-list__item"><a href="#" class="site-list__link">Пунт меню</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">Пунт меню</a></li>
+        <div class="main-nav__header">
+          <a class="main-nav__logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__img" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="site-list">
+          <li class="site-list__item"><a href="#" class="site-list__link">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
         </ul>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <svg class="user-list__icon user-list__icon--search" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <a href="#" class="user-list__link"><span class="user-list__span">Поиск по сайту</span></a>
+          </li>
+          <li class="user-list__item">
+            <svg class="user-list__icon user-list__icon--cart" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <a href="#" class="user-list__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="new-sale-list">
+          <li class="new-sale-list__item"><a href="#" class="new-sale-list__link">Новые поступления</a></li>
+          <li class="new-sale-list__item"><a href="#" class="new-sale-list__link">Распродажа</a></li>
+        </ul>
+        <p class="main-nav__text">Бесплатная доставка по России</p>
       </nav>
     </header>
     <main class="page-main">
@@ -31,28 +56,30 @@
         </div>
       </header>
       <section class="best-product container">
-        <div class="best-product__header-wrapper">
-          <h2 class="best-product__title">Товар недели</h2>
-          <h3 class="best-product__name">Вязаные корзинки</h3>
-        </div>
-        <p class="best-product__description">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="best-product__feature-list">
-          <div class="best-product__feature-item">
-            <dt class="best-product__property">Цвет:</dt>
-            <dd class="best-product__value">«Тиффани»/серый</dd>
-          </div>
-          <div class="best-product__feature-item">
-            <dt class="best-product__property">Диаметр:</dt>
-            <dd class="best-product__value">25 см</dd>
-          </div>
-          <div class="best-product__feature-item">
-            <dt class="best-product__property">Высота:</dt>
-            <dd class="best-product__value">15 см</dd>
-          </div>
+        <h2 class="best-product__title">Товар недели</h2>
+        <h3 class="best-product__name">Вязаные корзинки</h3>
+        <div class="best-product__description">
+          <p class="best-product__text">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="best-product__feature-list">
+            <div class="best-product__feature-item">
+              <dt class="best-product__property">Цвет:</dt>
+              <dd class="best-product__value">«Тиффани»/серый</dd>
+            </div>
+            <div class="best-product__feature-item">
+              <dt class="best-product__property">Диаметр:</dt>
+              <dd class="best-product__value">25 см</dd>
+            </div>
+            <div class="best-product__feature-item">
+              <dt class="best-product__property">Высота:</dt>
+              <dd class="best-product__value">15 см</dd>
+            </div>
         </dl>
+        </div>
         <img class="best-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка" width="260" height="315">
-        <p class="best-product__price">Цена: 990 руб.</p>
-        <button class="button best-product__button" type="button">Заказать</button>
+        <div class="best-product__order">
+          <p class="best-product__price">Цена: 990 руб.</p>
+          <button class="button best-product__button" type="button">Заказать</button>
+        </div>
       </section>
       <section class="about container">
         <h2 class="about__title">Коротко о нас:</h2>
@@ -145,7 +172,12 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wraper container">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">
+              <img class="page-footer__img" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+          </a>
+        </div>
         <div class="social">
           <ul class="social__list">
             <li class="social__item" aria-label="Наш instagram">
