@@ -4,6 +4,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 89px auto;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 89px auto;
@@ -37,7 +38,7 @@
 
   @media (min-width: $tablet-width) {
     width: 86px;
-    height: 46px;;
+    height: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,8 +68,8 @@
     justify-self: end;
     padding-right: 30px;
   }
+
   @media (min-width: $desktop-width) {
     grid-column: 4 / 6;
-
   }
 }

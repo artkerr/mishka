@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-   display: flex;
+    display: flex;
   }
 
 
@@ -32,7 +32,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-   }
+  }
 }
 
 .goods__name {
@@ -66,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
-   }
+  }
 }
 
 .goods__price {
