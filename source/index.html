@@ -13,7 +13,7 @@
           <a class="main-nav__logo">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="113" height="46">
               <img class="main-nav__img" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
             </picture>
           </a>
@@ -75,7 +75,12 @@
             </div>
         </dl>
         </div>
-        <img class="best-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка" width="260" height="315">
+        <div class="best-product__img-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img class="best-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка" width="260" height="315">
+          </picture>
+        </div>
         <div class="best-product__order">
           <p class="best-product__price">Цена: 990 руб.</p>
           <button class="button best-product__button" type="button">Заказать</button>
