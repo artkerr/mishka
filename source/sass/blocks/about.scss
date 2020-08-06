@@ -1,5 +1,5 @@
 .about {
-  padding: 0 30px;
+  padding: 7px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
@@ -33,46 +33,63 @@
 
 .about__item {
   width: 260px;
-  min-height: 94px;
+  min-height: 93px;
+  margin-bottom: 26px;
 }
 
 .about__text {
-  min-height: 60px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: $black;
+  margin: 0;
 }
 
 .about__icon {
   fill: $downy;
 
   &--flower {
+    margin-left: 7px;
+    margin-top: 7px;
+    margin-bottom: 9px;
     width: 32px;
     height: 37px;
   }
 
   &--money {
-    width: 42px;
+    margin-bottom: 19px;
+    width: 47px;
     height: 27px;
   }
 
   &--heart {
+    margin-left: 8px;
+    margin-top: 7px;
+    margin-bottom: 13px;
     width: 34px;
     height: 27px;
   }
 
   &--ball {
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-bottom: 9px;
     width: 35px;
     height: 34px;
   }
 
   &--rocket {
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-bottom: 18px;
     width: 55px;
     height: 23px;
   }
 
   &--gift {
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-bottom: 12px;
     width: 33px;
     height: 32px;
   }

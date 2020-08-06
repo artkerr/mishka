@@ -12,7 +12,7 @@
 }
 
 .main-nav__header {
-  min-height: 79px;
+  min-height: 74px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -21,6 +21,7 @@
 
 .main-nav__logo {
   text-align: center;
+  margin-top: 2px;
 
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;
@@ -46,8 +47,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 25px;
+  right: 27px;
   width: 26px;
   height: 17px;
   background-color: transparent;
@@ -67,7 +68,7 @@
   width: 20px;
   height: 2px;
   background-color: $black;
-  box-shadow: 0 5px 0 0 $black, 0 10px 0 0 $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -84,6 +85,7 @@
     height: 2px;
     background-color: $black;
   }
+
   &::before {
     transform: rotate(45deg);
   }
