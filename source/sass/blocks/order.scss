@@ -1,8 +1,9 @@
-.order {
-  padding: 30px;
-}
-
 .order__text {
   font-size: 13px;
   width: 250px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: 630px;
+  }
 }

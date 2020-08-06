@@ -5,6 +5,11 @@
   &::after {
     @include zigzag;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    position: relative;
+  }
 }
 
 .reviews__title {
@@ -15,11 +20,23 @@
   margin: 0;
 }
 
+.reviews__text {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    max-width: 648px;
+  }
+}
+
 .reviews__author-name {
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    max-width: 284px;
+    display: inline-block;
+  }
 }
 
 .reviews__author-nickname {
@@ -38,6 +55,12 @@
 .reviews__nav {
   display: flex;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+  }
 }
 
 .reviews__prev {
@@ -60,4 +83,10 @@
 .reviews__button {
   padding: 16px 80px;
   color: $charcoal;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 }

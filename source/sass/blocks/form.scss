@@ -5,6 +5,10 @@
 .form__fieldset {
   border: none;
   padding: 0;
+
+  &--gray {
+    background-color: $white-smoke;
+  }
 }
 
 .form__legend {
@@ -23,6 +27,14 @@
     height: 1px;
     background-color: $downy;
   }
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(55px);
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .form__text {
@@ -33,4 +45,22 @@
 
 .form__button {
   padding: 10px 45px;
+}
+
+.form__type {
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+  }
+}
+
+.form__color {
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+  }
+}
+
+.form__user-data {
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+  }
 }
