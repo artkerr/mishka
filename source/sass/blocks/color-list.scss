@@ -2,11 +2,18 @@
 .color-list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 700px;
+  }
 }
 
 .color-list__item {
   @include form-label;
   padding: 15px 0 15px 70px;
+  min-width: 300px;
 }
 
 .color-list__label {
