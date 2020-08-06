@@ -22,8 +22,8 @@
 
 .reviews__text {
   @media (min-width: $tablet-width) {
-   font-size: 17px;
-   max-width: 648px;
+    font-size: 17px;
+    max-width: 648px;
   }
 }
 
@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     max-width: 284px;
     display: inline-block;
-   }
+  }
 }
 
 .reviews__author-nickname {
@@ -60,7 +60,7 @@
     position: absolute;
     bottom: -20px;
     right: 40px;
-   }
+  }
 }
 
 .reviews__prev {
@@ -85,8 +85,8 @@
   color: $charcoal;
 
   @media (min-width: $tablet-width) {
-   position: absolute;
-   top: 0;
-   right: 50px;
+    position: absolute;
+    top: 0;
+    right: 50px;
   }
 }

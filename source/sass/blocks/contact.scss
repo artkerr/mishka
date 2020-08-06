@@ -12,10 +12,10 @@
   padding: 30px;
 
   @media (min-width: $tablet-width) {
-   padding: 30px 50px;
+    padding: 30px 50px;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-basis: 50%;
     margin: 0;
     padding-left: 100px;
@@ -37,9 +37,10 @@
 
 
   @media (min-width: $tablet-width) {
-   display: flex;
-   align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
@@ -102,8 +103,6 @@
 .contact__button {
   padding: 16px 56px;
   color: $charcoal;
-
-
 }
 
 .contact__button-wrapper {
@@ -117,5 +116,4 @@
     display: inline-block;
     width: 340px;
   }
-
 }
