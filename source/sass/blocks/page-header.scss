@@ -1,7 +1,6 @@
-// .page-header {
-//   padding: 30px;
+.page-header {
 
-//   @media (min-width: $tablet-width) {
-//     padding-top: 0;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}

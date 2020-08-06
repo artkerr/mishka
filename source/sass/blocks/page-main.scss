@@ -5,3 +5,9 @@
 .page-main__contact {
   margin-bottom: 20px;
 }
+
+.page-main__category {
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+  }
+}
