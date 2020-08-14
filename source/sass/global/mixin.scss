@@ -45,6 +45,11 @@
   background: url("../img/bg-zigzag-line.svg") repeat-x center / 100%;
   height: 10px;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 20px;
+  }
 }
 
 @mixin form-label {

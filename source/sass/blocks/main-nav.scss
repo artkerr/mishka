@@ -12,18 +12,18 @@
 }
 
 .main-nav__header {
+  min-height: 74px;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 30px 20px 30px;
+  margin-top: 25px;
 }
 
 .main-nav__logo {
-  margin-left: 75px;
-  grid-column: 1 / 2;
+  text-align: center;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    grid-column: 1 / 2;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,8 +36,9 @@
   width: 113px;
   height: 35px;
 
+
   @media (min-width: $tablet-width) {
-    width: 86px;
+    width: 113px;
     height: 46px;
   }
 
@@ -48,15 +49,57 @@
 }
 
 .main-nav__toggle {
-  background: url("../img/icon-menu-open.svg") no-repeat;
-  width: 20px;
-  height: 14px;
+  position: absolute;
+  top: 25px;
+  right: 27px;
+  width: 26px;
+  height: 17px;
+  background-color: transparent;
   border: none;
-  margin-bottom: 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  width: 20px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 26px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__text {
@@ -65,8 +108,9 @@
   @media (min-width: $tablet-width) {
     display: block;
     grid-column: 3 / 5;
-    justify-self: end;
-    padding-right: 30px;
+    margin-left: 105px;
+    margin-bottom: 0;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,5 +1,5 @@
 .about {
-  padding: 0 30px;
+  padding: 7px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
@@ -12,6 +12,11 @@
 
 .about__title {
   @include subtitle;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-left: 5px;
+  }
 }
 
 .about__list {
@@ -24,56 +29,100 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
   }
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
 }
 
 .about__item {
-  width: 260px;
-  min-height: 94px;
+  min-width: 260px;
+  min-height: 93px;
+  margin-bottom: 26px;
 }
 
 .about__text {
-  min-height: 60px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: $black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about__icon {
   fill: $downy;
 
   &--flower {
+    margin-left: 7px;
+    margin-top: 7px;
+    margin-bottom: 9px;
     width: 32px;
     height: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 5px;
+      margin-left: 9px;
+    }
   }
 
   &--money {
-    width: 42px;
+    margin-bottom: 19px;
+    width: 47px;
     height: 27px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+      margin-left: 2px;
+    }
   }
 
   &--heart {
+    margin-left: 8px;
+    margin-top: 7px;
+    margin-bottom: 13px;
     width: 34px;
     height: 27px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 35px;
+    }
   }
 
   &--ball {
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-bottom: 9px;
     width: 35px;
     height: 34px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-top: 8px;
+    }
   }
 
   &--rocket {
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-bottom: 18px;
     width: 55px;
     height: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 32px;
+    }
   }
 
   &--gift {
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-bottom: 12px;
     width: 33px;
     height: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 31px;
+    }
   }
 }

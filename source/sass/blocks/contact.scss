@@ -25,6 +25,8 @@
 .contact__title {
   font-size: 18px;
   line-height: 30px;
+  margin-top: 5px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     @include subtitle;
@@ -34,6 +36,7 @@
 .contact__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -50,23 +53,28 @@
   display: flex;
   margin-bottom: 30px;
 
+  &:last-child {
+    margin: 0;
+  }
+
   @media (min-width: $tablet-width) {
     flex-basis: 45%;
   }
 }
 
 .contact__name {
-  width: 90px;
+  width: 77px;
 }
 
 .contact__link {
   color: $charcoal;
   text-decoration: none;
   position: relative;
+  margin-top: 1px;
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     content: "";
     width: 100%;
@@ -87,13 +95,14 @@
 
 .contact__text {
   margin: 0;
-  max-width: 165px;
+  max-width: 145px;
 }
 
 .contact__iframe-map {
   border: none;
   width: 100%;
   height: 457px;
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     width: 527px;
@@ -101,7 +110,7 @@
 }
 
 .contact__button {
-  padding: 16px 56px;
+  padding: 14px 56px;
   color: $charcoal;
 }
 
