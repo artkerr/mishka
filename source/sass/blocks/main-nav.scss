@@ -24,7 +24,6 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +83,7 @@
     content: "";
     position: absolute;
     top: 9px;
-    right: 0px;
+    right: 0;
     width: 26px;
     height: 2px;
     background-color: $black;

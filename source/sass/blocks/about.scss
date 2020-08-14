@@ -35,8 +35,6 @@
   min-width: 260px;
   min-height: 93px;
   margin-bottom: 26px;
-
-
 }
 
 .about__text {
@@ -47,8 +45,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-   font-size: 20px;
-   line-height: 22px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
