@@ -141,7 +141,7 @@ exports.build = build;
 */
 
 exports.build = gulp.series(
-  clean, copy, styles, jsMin, sprite
+  clean, copy, styles, jsMin, images, webp, sprite
 );
 
 exports.start = gulp.series(
