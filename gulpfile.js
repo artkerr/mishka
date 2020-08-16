@@ -12,6 +12,7 @@ const gulpWebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const jsmin = require("gulp-jsmin");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -86,8 +87,7 @@ exports.server = server;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/img/**",
-    "source/**.html"
+    "source/img/**"
   ], {
     base: "source/"
   })
@@ -103,6 +103,16 @@ const clean = () => {
 };
 
 exports.clean = clean;
+
+// HTMLmin
+
+const htmlMin = () => {
+return gulp.src("source/*.html")
+.pipe(htmlmin({ collapseWhitespace: true }))
+.pipe(gulp.dest("build"));
+}
+
+exports.htmlMin = htmlMin;
 
 // JSmin
 
@@ -141,7 +151,7 @@ exports.build = build;
 */
 
 exports.build = gulp.series(
-  clean, copy, styles, jsMin, images, webp, sprite
+  clean, copy, htmlMin, styles, jsMin, images, webp, sprite
 );
 
 exports.start = gulp.series(
