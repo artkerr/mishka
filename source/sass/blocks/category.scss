@@ -24,6 +24,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 580px;
   }
 
   @media (min-width: $tablet-width) {
@@ -53,6 +54,7 @@
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 119px;
+  line-height: 30px;
 
 
   @media (min-width: $tablet-width) {
@@ -67,7 +69,6 @@
   list-style: none;
   padding: 0;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 370px;
@@ -75,7 +76,7 @@
 }
 
 .category-list__item {
-  min-height: 103px;
+  height: 103px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
@@ -155,13 +156,13 @@
 
 .category-list__link {
   display: block;
-  padding: 24px 160px 31px 30px;
+  padding: 24px 160px 31px 31px;
   color: $white;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
 
-  @media screen {
+  @media (min-width: $tablet-width) {
     padding: 25px 160px 30px 38px;
     line-height: 30px;
   }

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 5px 30px 65px 30px;
+  padding: 5px 30px 52px 30px;
   position: relative;
 
   &::after {
@@ -19,11 +19,11 @@
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .reviews__text {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -58,7 +58,7 @@
 
 .reviews__nav {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -85,7 +85,8 @@
 }
 
 .reviews__button {
-  padding: 15px 80px;
+  display: block;
+  padding: 9px 80px;
   color: $charcoal;
 
   @media (min-width: $tablet-width) {

@@ -10,6 +10,7 @@
 
 .contact__wrapper {
   padding: 30px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 50px;
@@ -64,6 +65,7 @@
 
 .contact__name {
   width: 77px;
+  line-height: 32px;
 }
 
 .contact__link {
@@ -110,12 +112,13 @@
 }
 
 .contact__button {
-  padding: 14px 56px;
+  display: block;
+  padding: 9px 0;
   color: $charcoal;
 }
 
 .contact__button-wrapper {
-  padding: 30px;
+  padding: 18px 30px 39px 30px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
