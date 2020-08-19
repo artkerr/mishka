@@ -13,7 +13,7 @@
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 50px;
+    padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +31,18 @@
 
   @media (min-width: $tablet-width) {
     @include subtitle;
+    margin-top: 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 3px;
+      top: -25px;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat center / 47px 81px;
+    }
   }
 }
 
@@ -43,6 +55,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-start;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +72,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 45%;
+    flex-basis: 50%;
+    font-size: 17px;
+
   }
 }
 
@@ -84,6 +99,14 @@
     background-color: $downy-3;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
   &:hover {
     color: $puerto-rico-2;
   }
@@ -98,6 +121,10 @@
 .contact__text {
   margin: 0;
   max-width: 145px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
 }
 
 .contact__iframe-map {
@@ -112,15 +139,26 @@
 }
 
 .contact__button {
-  display: block;
-  padding: 9px 0;
+  display: inline-block;
+  padding: 9px 53px;
   color: $charcoal;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 39px;
+  }
 }
 
 .contact__button-wrapper {
-  padding: 18px 30px 39px 30px;
+  // padding: 18px 30px 39px 30px;
+  margin-top: 18px;
+  margin-bottom: 39px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    margin-bottom: 58px;
+  }
+/*
   @media (min-width: $desktop-width) {
     position: absolute;
     bottom: 0;
@@ -128,4 +166,5 @@
     display: inline-block;
     width: 340px;
   }
+  */
 }

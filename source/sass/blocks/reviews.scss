@@ -2,19 +2,28 @@
   padding: 5px 30px 52px 30px;
   position: relative;
 
+
   &::after {
     @include zigzag;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 50px;
+    padding-bottom: 105px;
     position: relative;
+    background: url("../img/review@1x.jpg") no-repeat;
   }
 }
 
 .reviews__title {
   @include subtitle;
   margin-bottom: 0;
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+  }
 }
 
 .reviews__item {
@@ -40,6 +49,8 @@
   @media (min-width: $tablet-width) {
     max-width: 284px;
     display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
 
@@ -50,6 +61,12 @@
 
 .reviews__author-link {
   color: $charcoal;
+
+  @media (min-width: $tablet-width) {
+   color: $black;
+   line-height: 33px;
+   font-size: 17px;
+  }
 
   &:hover {
     color: $puerto-rico-2;
@@ -62,8 +79,9 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -20px;
-    right: 40px;
+    bottom: 96px;
+    right: 53px;
+    width: 169px;
   }
 }
 
@@ -91,7 +109,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 50px;
+    padding: 9px 38px;
   }
 }

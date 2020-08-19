@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -17,6 +19,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 21px;
+    margin-left: -3px;
+  }
 }
 
 .main-nav__logo {
@@ -105,13 +113,14 @@
 
 .main-nav__text {
   display: none;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: block;
     grid-column: 3 / 5;
-    margin-left: 105px;
+    margin-left: 103.4px;
     margin-bottom: 0;
-    margin-top: 25px;
+    margin-top: 17px;
   }
 
   @media (min-width: $desktop-width) {

@@ -15,7 +15,6 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;
-    margin-left: 5px;
   }
 }
 
@@ -73,7 +72,7 @@
     height: 27px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 28px;
+      margin-top: 31px;
       margin-left: 2px;
     }
   }
@@ -111,7 +110,8 @@
     height: 23px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 32px;
+      margin-top: 34px;
+      margin-bottom: 20px;
     }
   }
 

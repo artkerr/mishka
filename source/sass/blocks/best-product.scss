@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px;
+    padding-bottom: 60px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
   }
@@ -157,8 +158,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 22px;
+    margin-bottom: 31px;
   }
 }
 

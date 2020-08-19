@@ -157,11 +157,13 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link">
-              <img class="page-footer__img" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+          <a class="page-footer__logo-link" aria-label="Интернет магазин Мишка">
+            <svg role="img" class="page-footer__logo-icon" width="102" height="34">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
           </a>
         </div>
-        <div class="social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Наш instagram">
@@ -186,7 +188,7 @@
             </li>
           </ul>
         </div>
-        <div class="developer">
+        <div class="page-footer__developer developer">
           <div class="developer__wrapper">
             <p class="developer__text">Разработано</p>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link" aria-label="Лого HtmlAcademy">

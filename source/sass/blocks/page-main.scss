@@ -1,6 +1,12 @@
 
 .page-main__category {
   @media (min-width: $tablet-width) {
-    margin-top: -50px;
+    margin-top: -49px;
+  }
+}
+
+.page-main__about {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
   }
 }

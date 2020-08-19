@@ -1,5 +1,9 @@
 .developer {
   padding: 5px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .developer__wrapper {
