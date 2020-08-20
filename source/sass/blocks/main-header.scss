@@ -1,5 +1,8 @@
 .main-header {
   background-color: $white-smoke;
+  position: relative;
+
+  @include zigzag-bg;
 }
 
 .main-header__title {
@@ -13,5 +16,7 @@
 
   @media (min-width: $tablet-width) {
     @include subtitle;
+    padding-top: 105px;
   }
 }
+

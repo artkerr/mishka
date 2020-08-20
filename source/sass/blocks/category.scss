@@ -6,23 +6,7 @@
     min-height: 750px;
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x 100% / contain;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      bottom: -15px;
-      left: -13px;
-      background-size: 1250px 100%;
-    }
+    @include zigzag-bg;
   }
 }
 
