@@ -1,5 +1,5 @@
 .creation {
-  padding: 20px 30px 50px 30px;
+  padding: 21px 30px 50px 30px;
 }
 
 .creation__wrapper {
@@ -49,12 +49,15 @@
   font-size: 17px;
   font-weight: bold;
   color: $black;
+  line-height: 24px;
   position: relative;
+  margin-top: 23px;
+  margin-bottom: 25px;
 
   &::before {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 33px;
+    top: 9px;
     content: "";
     width: 32px;
     height: 32px;
@@ -72,7 +75,7 @@
 }
 
 .creation__info {
-  padding: 0 30px 30px 30px;
+  padding: 14px 30px 31px 35px;
 
   @media (min-width: $desktop-width) {
     grid-column: 5 / 7;
@@ -83,9 +86,10 @@
 .creation__description {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 40px;
 }
 
 .creation__button {
-  padding: 10px 19px;
-  text-align: center;
+  padding: 9px 24px;
+  font-size: 18px;
 }

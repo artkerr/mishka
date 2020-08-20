@@ -27,7 +27,7 @@
 }
 
 .goods__info {
-  padding: 28px;
+  padding: 18px 28px 11px 28px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -39,7 +39,7 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .goods__link {
@@ -56,6 +56,8 @@
 
 .goods__description {
   font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 18px;
 }
 
 .goods__order {
@@ -72,6 +74,7 @@
 .goods__price {
   line-height: 24px;
   font-weight: bold;
+  margin-top: 22px;
 }
 
 .goods__button {

@@ -1,10 +1,5 @@
 .main-header {
-  height: 196px;
   background-color: $white-smoke;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -90px;
-  }
 }
 
 .main-header__title {
@@ -12,8 +7,9 @@
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  padding-top: 90px;
+  padding: 74px 0;
   color: $black;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     @include subtitle;

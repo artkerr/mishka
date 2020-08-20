@@ -49,9 +49,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 22px;
+
     &::after {
-      left: -112px;
-      top: -15px;
+      left: -113px;
+      top: -16px;
     }
   }
 }
@@ -177,9 +179,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 48px;
+    bottom: 46px;
     left: 170px;
-    display: inline-block;
     width: 340px;
   }
 }
