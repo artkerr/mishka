@@ -21,10 +21,18 @@
     display: block;
     margin-right: 122px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 311px;
+  }
 }
 
 .page-footer__social {
   @media (min-width: $tablet-width) {
     margin-right: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 313px;
   }
 }

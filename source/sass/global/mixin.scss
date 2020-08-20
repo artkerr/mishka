@@ -50,6 +50,12 @@
     width: 100%;
     height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 23px;
+    left: 50px;
+  }
 }
 
 @mixin form-label {

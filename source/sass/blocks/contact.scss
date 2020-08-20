@@ -5,6 +5,8 @@
     position: relative;
     max-width: $desktop-width;
     margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 95px;
   }
 }
 
@@ -19,7 +21,8 @@
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
     margin: 0;
-    padding-left: 100px;
+    padding-left: 225px;
+    padding-top: 61px;
   }
 }
 
@@ -44,6 +47,13 @@
       background: url("../img/icon-flag.svg") no-repeat center / 47px 81px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: -112px;
+      top: -15px;
+    }
+  }
 }
 
 .contact__list {
@@ -60,6 +70,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-top: 35px;
   }
 }
 
@@ -107,6 +118,12 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -3px;
+    }
+  }
+
   &:hover {
     color: $puerto-rico-2;
   }
@@ -149,7 +166,6 @@
 }
 
 .contact__button-wrapper {
-  // padding: 18px 30px 39px 30px;
   margin-top: 18px;
   margin-bottom: 39px;
   text-align: center;
@@ -158,13 +174,12 @@
     margin-top: 33px;
     margin-bottom: 58px;
   }
-/*
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 48px;
+    left: 170px;
     display: inline-block;
     width: 340px;
   }
-  */
 }

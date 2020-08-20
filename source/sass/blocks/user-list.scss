@@ -3,15 +3,8 @@
   padding: 0;
   margin: 0;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
-    grid-column: 3 / 5;
-    transform: translateX(-14px);
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 4 / 6;
   }
 }
 
@@ -52,6 +45,12 @@
       padding-top: 25px;
       padding-left: 82px;
       min-width: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 104px;
     }
   }
 }
