@@ -6,6 +6,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -72,6 +75,12 @@
     margin-top: 10px;
     margin-left: 1px;
     min-width: 200px;
+  }
+}
+
+.user-list__item-search {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

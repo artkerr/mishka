@@ -29,3 +29,11 @@
   margin-bottom: 10px;
 }
 
+.page-main__product{
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+
+
