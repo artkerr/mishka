@@ -2,7 +2,7 @@
   padding: 10px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 50px 0 50px;
+    padding: 48px 50px 30px 50px;
   }
 }
 
@@ -13,17 +13,19 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
-.product__item {
+.product__item:not(:last-child){
   margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
