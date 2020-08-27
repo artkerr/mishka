@@ -5,7 +5,8 @@
 
 .type-list__item {
   @include form-label;
-  padding: 10px 0 10px 70px;
+  padding: 12px 0 12px 60px;
+  max-width: 220px;
 }
 
 .type-list__label {
@@ -14,7 +15,7 @@
   &::before {
     position: absolute;
     left: -60px;
-    top: -10px;
+    top: -3px;
     content: "";
     width: 42px;
     height: 42px;
@@ -26,7 +27,7 @@
 .type-list__input:checked + .type-list__label {
   &::before {
     left: -60px;
-    top: -10px;
+    top: -3px;
     content: "";
     width: 42px;
     height: 42px;
@@ -36,7 +37,7 @@
 
   &::after {
     position: absolute;
-    top: 2.5px;
+    top: 9px;
     left: -48px;
     content: "";
     width: 18px;

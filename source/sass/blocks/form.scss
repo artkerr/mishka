@@ -5,10 +5,18 @@
 .form__fieldset {
   border: none;
   padding: 0;
+  margin: 0;
+  overflow: hidden;
 
-  &--gray {
-    background-color: $white-smoke;
+  &--gray-bg {
+    @media (min-width: $tablet-width) {
+      background-color: $white-smoke;
+    }
   }
+}
+
+.form__fieldset-wrapper {
+  min-width: 260px;
 }
 
 .form__legend {
@@ -17,13 +25,15 @@
   text-transform: uppercase;
   color: $downy;
   position: relative;
+  margin-top: 10px;
+  padding: 0;
 
   &::after {
     position: absolute;
     top: 13px;
     left: 60px;
     content: "";
-    width: 160px;
+    width: 100%;
     height: 1px;
     background-color: $downy;
   }
@@ -40,7 +50,8 @@
 .form__text {
   font-size: 14px;
   line-height: 16px;
-  padding-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 28px;
 }
 
 .form__button {
@@ -48,12 +59,16 @@
 }
 
 .form__type {
+  margin-top: 15px;
+
   @media (min-width: $tablet-width) {
     margin-left: 100px;
   }
 }
 
 .form__color {
+  margin-bottom: 13px;
+
   @media (min-width: $tablet-width) {
     margin-left: 100px;
   }
@@ -63,4 +78,9 @@
   @media (min-width: $tablet-width) {
     margin-left: 100px;
   }
+}
+
+.form__contacts {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
