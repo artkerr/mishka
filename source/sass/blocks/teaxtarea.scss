@@ -1,0 +1,33 @@
+.textarea__textarea {
+  border: 2px solid $black;
+  width: 260px;
+  height: 142px;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black-30;
+  padding: 15px;
+  margin-top: 12px;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $black-30;
+  }
+
+}
+
+.textarea__label {
+  @include form-label;
+  color: $downy;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: $downy;
+  }
+}

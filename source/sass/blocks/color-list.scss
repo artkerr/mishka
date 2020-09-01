@@ -6,17 +6,25 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    min-width: 700px;
   }
 }
 
 .color-list__item {
   @include form-label;
-  padding: 13px 0 13px 63px;
-  margin-bottom: 17px;
+  padding: 10px 0 12px 61px;
+  margin-bottom: 21px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-bottom: 1px;
+
+    &:nth-child(odd) {
+      flex-basis: 52%;
+    }
   }
 }
 
@@ -25,12 +33,21 @@
 
   &::before {
     position: absolute;
-    left: -62px;
+    left: -60px;
     top: -10px;
     content: "";
     width: 38px;
     height: 38px;
     border: 2px solid $charcoal;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+    &::before {
+      width: 52px;
+      height: 52px;
+      top: -12px;
+    }
   }
 }
 
@@ -38,4 +55,11 @@
   &::before {
     background: url("../../img/icon-tick.svg") no-repeat center / 23px 16px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: 32px 22px;
+    }
+  }
+
 }

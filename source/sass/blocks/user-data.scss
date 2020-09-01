@@ -1,24 +1,42 @@
 .user-data {
   list-style: none;
   padding: 0;
-  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+   }
 }
 
 .user-data__item {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 11px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .user-data__label {
   @include form-label;
-  padding: 5px 0;
+  padding: 5.5px 0;
+
+  @media (min-width: $tablet-width) {
+   margin-right: 26px;
+   padding-top: 3px;
+  }
 }
 
 .user-data__input {
   border: none;
   border-bottom: 2px solid $black;
-  padding: 7.5px 0;
+  padding: 7px 0;
   font-size: 17px;
   color: $black;
 
@@ -26,4 +44,14 @@
     font-size: 17px;
     color: $black-30;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    width: 100%;
+    padding: 8.5px 18px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+   }
 }

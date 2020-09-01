@@ -1,4 +1,3 @@
-
 .user-contacts {
   list-style: none;
   padding: 0;
@@ -8,21 +7,37 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10px;
+  overflow: hidden;
 
   &::after {
     position: absolute;
-    top: 13px;
-    left: 60px;
+    top: 7px;
+    left: 61px;
     content: "";
     width: 100%;
     height: 1px;
     background-color: $downy;
   }
 
+  &:first-child {
+    margin-bottom: 36px;
+  }
+
   &:nth-child(2){
     &::after {
       left: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+   flex-direction: row;
+
+    &::after {
+      content: none;
+    }
+
+    &:first-child {
+      margin-bottom: 12px;
     }
   }
 }
@@ -31,17 +46,21 @@
   text-transform: uppercase;
   color: $downy;
   font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 225px;
+  }
 
 }
 
 .user-contacts__input {
   border: none;
   border-bottom: 2px solid $black;
-  padding-top: 5px;
-  padding-bottom: 9px;
-  margin-bottom: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-size: 17px;
   color: $black-30;
 
@@ -49,43 +68,29 @@
     font-size: 17px;
     color: $black-30;
   }
-}
 
-.user-contacts__extra {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 13px;
-    left: 60px;
-    content: "";
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    background-color: $white-smoke;
     width: 100%;
-    height: 1px;
-    background-color: $downy;
+    padding: 0;
+    padding-left: 18px;
+    padding-bottom: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+      color: $black-30;
+    }
   }
 }
 
-.user-contacts__textarea {
-  border: 2px solid $black;
-  width: 260px;
-  height: 142px;
-  font-size: 17px;
-  line-height: 18px;
-  color: $black-30;
-  padding: 15px;
-  margin-top: 14px;
-
-  &::placeholder {
-    font-size: 17px;
-    color: $black-30;
-  }
-}
 
 .user-contacts__icon {
   fill: $black-20;
   position: absolute;
   right: 6px;
-  top: 37px;
+  top: 32px;
 
   &--phone {
     width: 25px;
@@ -96,6 +101,16 @@
     width: 32px;
     height: 32px;
     right: 1px;
-    top: 30px;
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: 27px;
+
+    &--email {
+      right: 23px;
+      top: -4px;
+    }
   }
 }

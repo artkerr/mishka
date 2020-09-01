@@ -85,4 +85,8 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }

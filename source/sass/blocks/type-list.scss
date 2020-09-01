@@ -1,12 +1,23 @@
 .type-list {
   list-style: none;
   padding: 0;
+  padding-top: 25px;
 }
 
 .type-list__item {
   @include form-label;
-  padding: 12px 0 12px 60px;
+  padding: 10px 0 0 60px;
   max-width: 220px;
+
+  &:first-child {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding: 29px 0 29px 60px;
+    max-width: 100%;
+  }
 }
 
 .type-list__label {
@@ -14,35 +25,56 @@
 
   &::before {
     position: absolute;
-    left: -60px;
-    top: -3px;
+    left: -62px;
+    top: -10px;
     content: "";
     width: 42px;
     height: 42px;
     border: 2px solid $charcoal;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+      left: -77.5px;
+      top: -13px;
+    }
   }
 }
 
 .type-list__input:checked + .type-list__label {
   &::before {
-    left: -60px;
-    top: -3px;
+    left: -62px;
+    top: -4px;
     content: "";
     width: 42px;
     height: 42px;
     border: 2px solid $charcoal;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+      left: -77.5px;
+      top: -13px;
+    }
   }
 
   &::after {
     position: absolute;
-    top: 9px;
-    left: -48px;
+    top: 8px;
+    left: -50px;
     content: "";
     width: 18px;
     height: 18px;
     background-color: $downy;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+      left: -61px;
+      top: 4px;
+    }
   }
 }
