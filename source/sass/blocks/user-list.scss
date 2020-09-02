@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 400px;
   }
@@ -103,6 +104,7 @@
     fill: $downy;
     opacity: 1;
   }
+
   &:active {
     fill: $downy;
     opacity: 0.2;

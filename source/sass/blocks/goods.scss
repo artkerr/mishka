@@ -4,7 +4,7 @@
   &:hover {
     box-sizing: border-box;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   &:active {
@@ -107,7 +107,6 @@
     min-height: 75px;
     margin-top: auto;
   }
-
 }
 
 .goods__price {
@@ -119,6 +118,7 @@
     font-size: 17px;
     margin-top: 20px;
   }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }

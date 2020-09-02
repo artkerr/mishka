@@ -44,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 21px;
+
     &::before {
       width: 52px;
       height: 52px;
@@ -75,5 +76,4 @@
       background-size: 32px 22px;
     }
   }
-
 }

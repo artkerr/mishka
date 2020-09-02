@@ -17,7 +17,7 @@
   &:hover {
     box-sizing: border-box;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
 
   &:hover {
     transform: scale(1.1);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   &:active {
@@ -160,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width) {
-   margin-bottom: 52px;
+    margin-bottom: 52px;
   }
 }
 

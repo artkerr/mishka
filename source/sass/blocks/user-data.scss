@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
-   }
+  }
 }
 
 .user-data__item {
@@ -28,8 +28,8 @@
   padding: 5.5px 0;
 
   @media (min-width: $tablet-width) {
-   margin-right: 26px;
-   padding-top: 3px;
+    margin-right: 26px;
+    padding-top: 3px;
   }
 }
 
@@ -58,5 +58,5 @@
     &::placeholder {
       font-size: 19px;
     }
-   }
+  }
 }
