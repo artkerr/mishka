@@ -231,6 +231,31 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__window">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal__filedset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list size-list">
+              <li class="size-list__item">
+                <input class="size-list__input visually-hidden" type="checkbox" name="size" id="S" checked>
+                <label class="size-list__label" for="S">S</label>
+              </li>
+              <li class="size-list__item">
+                <input class="size-list__input visually-hidden" type="checkbox" name="size" id="M">
+                <label class="size-list__label" for="M">M</label>
+              </li>
+              <li class="size-list__item">
+                <input class="size-list__input visually-hidden" type="checkbox" name="size" id="L">
+                <label class="size-list__label" for="L">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script src="js/script.min.js"></script>
   </body>
 </html>
