@@ -22,6 +22,7 @@
 
 .type-list__label {
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -38,6 +39,19 @@
       height: 52px;
       left: -77.5px;
       top: -13px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: $downy;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $charcoal;
+      opacity: 0.3;
     }
   }
 }
@@ -75,6 +89,19 @@
       height: 20px;
       left: -61px;
       top: 4px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: $downy;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $charcoal;
+      opacity: 0.3;
     }
   }
 }

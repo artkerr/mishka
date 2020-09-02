@@ -45,6 +45,11 @@
     color: $black-30;
   }
 
+  &:hover {
+    border-color: $downy;
+  }
+
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     width: 100%;

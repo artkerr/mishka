@@ -62,7 +62,7 @@
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 17px;
-  color: $black-30;
+  color: $black;
 
   &::placeholder {
     font-size: 17px;
@@ -83,6 +83,15 @@
       color: $black-30;
     }
   }
+
+  &:hover {
+    border-color: $downy;
+  }
+
+  &:hover + .user-contacts__icon {
+    fill: $downy;
+  }
+
 }
 
 

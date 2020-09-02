@@ -30,6 +30,7 @@
 
 .color-list__label {
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -47,6 +48,19 @@
       width: 52px;
       height: 52px;
       top: -12px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: $downy;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $charcoal;
+      opacity: 0.3;
     }
   }
 }

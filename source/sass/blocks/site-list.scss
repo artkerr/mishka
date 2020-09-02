@@ -59,6 +59,14 @@
   line-height: 24px;
   color: $black;
 
+  &:hover {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 15px;
   }

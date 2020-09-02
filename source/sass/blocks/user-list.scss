@@ -70,6 +70,14 @@
   line-height: 24px;
   color: $black;
 
+  &:hover {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-top: 10px;
@@ -90,6 +98,15 @@
   top: 30px;
   fill: $black;
   opacity: 0.2;
+
+  &:hover {
+    fill: $downy;
+    opacity: 1;
+  }
+  &:active {
+    fill: $downy;
+    opacity: 0.2;
+  }
 
   @media (min-width: $tablet-width) {
     top: 35px;

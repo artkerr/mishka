@@ -1,9 +1,6 @@
 
 .page-footer {
   background-color: $white-smoke;
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .page-footer__wrapper {
@@ -34,5 +31,15 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 313px;
+  }
+}
+
+.page-footer__logo-icon {
+  &:hover {
+    fill: $downy;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
