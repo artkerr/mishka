@@ -1,6 +1,7 @@
 .user-contacts {
   list-style: none;
   padding: 0;
+  padding-bottom: 40px;
 }
 
 .user-contacts__item {
@@ -31,13 +32,14 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    overflow: visible;
 
     &::after {
       content: none;
     }
 
     &:first-child {
-      margin-bottom: 12px;
+      margin-bottom: 41px;
     }
   }
 }
@@ -51,7 +53,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 225px;
+    width: 222px;
   }
 }
 
@@ -75,11 +77,14 @@
     width: 100%;
     padding: 0;
     padding-left: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
+    margin-top: -6px;
 
     &::placeholder {
       font-size: 19px;
+      line-height: 18px;
       color: $black-30;
+
     }
   }
 
@@ -112,12 +117,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: -5px;
     right: 27px;
+
 
     &--email {
       right: 23px;
-      top: -4px;
+      top: -10px;
     }
   }
 }

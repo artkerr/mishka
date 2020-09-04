@@ -1,3 +1,10 @@
+.textarea {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
 .textarea__textarea {
   border: 2px solid $black;
   width: 260px;
@@ -16,12 +23,19 @@
   &:hover {
     border-color: $downy;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -15px;
+    width: 501px;
+  }
 }
 
 .textarea__label {
-  @include form-label;
-  color: $downy;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
   text-transform: uppercase;
+  color: $downy;
   position: relative;
 
   &::before {
@@ -32,5 +46,14 @@
     width: 200px;
     height: 1px;
     background-color: $downy;
+  }
+
+  @media (min-width: $tablet-width)  {
+    width: 165px;
+    margin-top: 5px;
+
+    &::before {
+      content: none;
+    }
   }
 }

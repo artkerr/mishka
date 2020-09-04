@@ -1,17 +1,12 @@
 .type-list {
   list-style: none;
   padding: 0;
-  padding-top: 25px;
 }
 
 .type-list__item {
   @include form-label;
-  padding: 10px 0 0 60px;
+  padding: 12px 0 12px 60px;
   max-width: 220px;
-
-  &:first-child {
-    margin-bottom: 13px;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -26,17 +21,17 @@
 
   &::before {
     position: absolute;
-    left: -62px;
+    left: -60px;
     top: -10px;
     content: "";
-    width: 42px;
-    height: 42px;
+    width: 41px;
+    height: 41px;
     border: 2px solid $charcoal;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 52px;
-      height: 52px;
+      width: 51px;
+      height: 51px;
       left: -77.5px;
       top: -13px;
     }
@@ -58,17 +53,17 @@
 
 .type-list__input:checked + .type-list__label {
   &::before {
-    left: -62px;
-    top: -4px;
+    left: -60px;
+    top: -3px;
     content: "";
-    width: 42px;
-    height: 42px;
+    width: 41px;
+    height: 41px;
     border: 2px solid $charcoal;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 52px;
-      height: 52px;
+      width: 51px;
+      height: 51px;
       left: -77.5px;
       top: -13px;
     }
@@ -76,17 +71,17 @@
 
   &::after {
     position: absolute;
-    top: 8px;
-    left: -50px;
+    top: 10px;
+    left: -47px;
     content: "";
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-color: $downy;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
+      width: 19px;
+      height: 19px;
       left: -61px;
       top: 4px;
     }

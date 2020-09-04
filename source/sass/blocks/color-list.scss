@@ -2,6 +2,7 @@
 .color-list {
   list-style: none;
   padding: 0;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -20,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    margin-bottom: 1px;
+    margin-bottom: 36px;
 
     &:nth-child(odd) {
       flex-basis: 52%;
@@ -40,7 +41,6 @@
     width: 38px;
     height: 38px;
     border: 2px solid $charcoal;
-    opacity: 0.1;
   }
 
   @media (min-width: $tablet-width) {

@@ -13,6 +13,7 @@
   padding: 74px 0;
   color: $black;
   margin-top: 0;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     @include subtitle;

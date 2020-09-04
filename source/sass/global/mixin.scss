@@ -90,3 +90,14 @@
     font-size: 19px;
   }
 }
+
+@mixin form-legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $downy;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
