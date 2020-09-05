@@ -58,6 +58,12 @@
   }
 }
 
+.form__legend-type {
+  @media (min-width: $desktop-width) {
+    transform: translateY(17px);
+  }
+}
+
 .form__text {
   font-size: 14px;
   line-height: 16px;

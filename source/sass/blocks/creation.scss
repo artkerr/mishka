@@ -76,11 +76,12 @@
 
   &:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in;
   }
 
   &:active {
     transform: scale(0.8);
+    transition: all 0.3s ease-out;
     opacity: 0.8;
   }
 }

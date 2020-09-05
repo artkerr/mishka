@@ -36,11 +36,11 @@
 
 
   @media (min-width: $tablet-width) {
-   width: 112px;
+    width: 112px;
 
-   &::before {
-     width: 112px;
-   }
+    &::before {
+      width: 112px;
+    }
   }
 }
 

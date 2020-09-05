@@ -79,11 +79,11 @@
 }
 
 .category-list__item {
-  height: 103px;
+  height: 110px;
 
   &:hover {
     transform: translateY(-5px);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active {
