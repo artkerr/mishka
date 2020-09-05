@@ -3,6 +3,10 @@
   position: relative;
 
   @include zigzag-bg;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .main-header__title {

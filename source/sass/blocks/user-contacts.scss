@@ -2,6 +2,10 @@
   list-style: none;
   padding: 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 815px;
+  }
 }
 
 .user-contacts__item {
@@ -55,6 +59,10 @@
   @media (min-width: $tablet-width) {
     width: 222px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+  }
 }
 
 .user-contacts__input {
@@ -86,6 +94,10 @@
       color: $black-30;
 
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
   }
 
   &:hover {
@@ -124,6 +136,15 @@
     &--email {
       right: 23px;
       top: -10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10px;
+
+
+    &--email {
+      right: 6px;
     }
   }
 }

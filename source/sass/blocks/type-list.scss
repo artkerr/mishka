@@ -35,6 +35,10 @@
       left: -77.5px;
       top: -13px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -80px;
+    }
   }
 
   &:hover {
@@ -67,6 +71,10 @@
       left: -77.5px;
       top: -13px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -80px;
+    }
   }
 
   &::after {
@@ -84,6 +92,10 @@
       height: 19px;
       left: -61px;
       top: 4px;
+    }
+    @media (min-width: $desktop-width) {
+      left: -64px;
+      top: 3px;
     }
   }
 

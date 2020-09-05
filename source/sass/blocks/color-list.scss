@@ -27,6 +27,14 @@
       flex-basis: 52%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 30%;
+
+    &:nth-child(odd) {
+      flex-basis: 30%;
+    }
+  }
 }
 
 .color-list__label {
@@ -50,6 +58,12 @@
       width: 52px;
       height: 52px;
       top: -12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -14px;
     }
   }
 

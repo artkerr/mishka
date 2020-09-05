@@ -28,6 +28,11 @@
     margin-top: -15px;
     width: 501px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -15px;
+    width: 700px;
+  }
 }
 
 .textarea__label {
@@ -55,5 +60,9 @@
     &::before {
       content: none;
     }
+  }
+
+  @media (min-width: $tablet-width)  {
+    width: 115px;
   }
 }

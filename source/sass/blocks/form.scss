@@ -23,6 +23,10 @@
   @media (min-width: $tablet-width) {
     padding: 65px 50px 11px 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 50px 11px 110px;
+  }
 }
 
 .form__legend {
@@ -86,6 +90,11 @@
     margin-top: -46px;
     margin-bottom: 27px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 135px;
+    margin-top: -30px;
+  }
 }
 
 .form__color {
@@ -96,6 +105,11 @@
     margin-left: 166px;
     margin-top: -25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 114px;
+    margin-top: -26px;
+  }
 }
 
 .form__user-data {
@@ -105,6 +119,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 166px;
     margin-top: -47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 116px;
   }
 }
 
@@ -127,5 +145,9 @@
     justify-content: space-between;
     padding: 42px 50px;
     padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 225px;
   }
 }
