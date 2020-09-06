@@ -1,9 +1,10 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-
-var button = document.querySelector('.best-product__button');
+var popupLinks = document.querySelectorAll('.modal__open');
 var popup = document.querySelector('.modal');
 
+
+// Mobile menu
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -17,11 +18,18 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// Modal
 
-button.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.add('modal--show');
-});
+if (popupLinks.length > 0) {
+  for ( var i = 0; i < popupLinks.length; i++) {
+    var popupLink = popupLinks[i];
+
+    popupLink.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.add('modal--show');
+    });
+  }
+};
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
