@@ -19,6 +19,14 @@
     flex-direction: column;
     min-height: 659px;
   }
+
+  &:nth-child(2) .goods__description {
+   margin-top: 3px;
+  }
+
+  &:nth-child(3) .goods__name {
+    margin-top: -2px;
+  }
 }
 
 .goods__img {
@@ -58,6 +66,7 @@
   font-weight: bold;
   line-height: 24px;
   margin: 0;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -83,7 +92,7 @@
 
 .goods__description {
   font-size: 13px;
-  margin-top: 7px;
+  margin-top: 6px;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
@@ -130,13 +139,13 @@
   width: 20px;
   height: 19px;
   margin-right: 4px;
+  margin-top: -4px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 28px;
     margin-right: 4px;
-    margin-top: -3px;
   }
 }
 

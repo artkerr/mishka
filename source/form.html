@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вязание на заказ Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="page-header container">
@@ -53,11 +53,12 @@
         </div>
       </header>
       <section class="order">
+        <h2 class="visually-hidden">Форма заказа</h2>
         <p class="order__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend-type">Тип</legend>
             <div class="form__fieldset-wrapper container">
-              <legend class="form__legend form__legend-type">Тип</legend>
               <ul class="form__type type-list">
                 <li class="type-list__item">
                 <input class="type-list__input visually-hidden" type="radio" name="type" id="interior" value="interior" checked>
@@ -71,8 +72,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--gray-bg">
+            <legend class="form__legend">Цвет</legend>
             <div class="form__fieldset-wrapper container">
-              <legend class="form__legend">Цвет</legend>
               <ul class="form__color color-list">
                 <li class="color-list__item">
                   <input class="color-list__input visually-hidden" type="checkbox" name="color" id="white" value="white" checked>
@@ -102,8 +103,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
+            <legend class="form__legend">ФИО</legend>
             <div class="form__fieldset-wrapper container">
-              <legend class="form__legend">ФИО</legend>
               <ul class="form__user-data user-data">
                 <li class="user-data__item">
                   <label class="user-data__label" for="first-name">Имя:</label>
@@ -121,8 +122,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--gray-bg">
+            <legend class="form__legend visually-hidden">Контакты</legend>
             <div class="form__fieldset-wrapper container">
-              <legend class="form__legend visually-hidden">Контакты</legend>
               <ul class="form__contacts user-contacts">
                 <li class="user-contacts__item">
                   <label class="user-contacts__label " for="phone">Тел</label>
@@ -142,8 +143,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
+            <label class="textarea__label" for="message">Доп</label>
             <div class="form__fieldset-wrapper textarea container">
-              <label class="textarea__label" for="message">Доп</label>
               <textarea class="textarea__textarea" name="user-contacts" id="message" placeholder="Опишите все ваши пожелания к заказу">
               </textarea>
             </div>

@@ -19,7 +19,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 135px auto auto;
     padding-top: 55px;
-    padding-bottom: 87px;
+    padding-bottom: 8px;
   }
 }
 
@@ -209,7 +209,7 @@
 }
 
 .best-product__button {
-  padding: 8px 84px;
+  padding: 8px 82px;
   line-height: 32px;
 
   @media (min-width: $tablet-width) {
