@@ -7,7 +7,7 @@ var popup = document.querySelector('.modal');
 
 navMain.classList.remove('main-nav--nojs');
 
-navMain.addEventListener('click', function() {
+navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
