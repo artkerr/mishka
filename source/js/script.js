@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function() {
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
-  }
+  };
 });
 
 // Modal
@@ -22,19 +22,18 @@ navToggle.addEventListener('click', function() {
 if (popupLinks.length > 0) {
   for ( var i = 0; i < popupLinks.length; i++) {
     var popupLink = popupLinks[i];
-
     popupLink.addEventListener('click', function (evt) {
       evt.preventDefault();
       popup.classList.add('modal--show');
     });
-  }
+  };
 };
 
 popup.addEventListener ('click', function (evt) {
   if (!evt.target.closest('.modal__window')) {
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
-      };
+    };
   };
 });
 
@@ -43,6 +42,6 @@ document.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
-    }
-  }
+    };
+  };
 });

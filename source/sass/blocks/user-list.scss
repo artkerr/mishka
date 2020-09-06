@@ -129,6 +129,13 @@
     height: 18px;
     left: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+
+    &--cart {
+      left: 32px;
+    }
+  }
 }
 
 .user-list__span {

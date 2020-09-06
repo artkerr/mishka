@@ -4,8 +4,8 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensas.woff2") format("woff2");
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensas.woff") format("woff");
 }
 
 @font-face {
@@ -14,6 +14,6 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensasbols.woff2") format("woff2");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensasbols.woff") format("woff");
 }

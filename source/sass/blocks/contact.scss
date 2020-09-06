@@ -88,6 +88,10 @@
     flex-basis: 50%;
     font-size: 17px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .contact__name {
