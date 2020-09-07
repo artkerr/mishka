@@ -1,9 +1,21 @@
 .main-header {
-  height: 196px;
   background-color: $white-smoke;
+  position: relative;
+
+  @include zigzag-bg;
 
   @media (min-width: $tablet-width) {
-    margin-top: -90px;
+    &::after {
+      bottom: -15px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 0;
+      background-size: 1150px 100%;
+    }
   }
 }
 
@@ -12,10 +24,18 @@
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  padding-top: 90px;
+  padding: 74px 0;
   color: $black;
+  margin-top: 0;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     @include subtitle;
+    padding-top: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+    padding-top: 103px;
   }
 }

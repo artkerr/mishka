@@ -1,5 +1,9 @@
 .developer {
   padding: 5px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .developer__wrapper {
@@ -14,7 +18,7 @@
   font-weight: bold;
   line-height: 18px;
   margin: 0;
-  margin-right: 32px;
+  margin-right: 28px;
   padding-bottom: 7px;
   color: $black;
 }

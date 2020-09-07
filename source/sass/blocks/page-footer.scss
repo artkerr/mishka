@@ -5,10 +5,9 @@
 
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 48px 50px;
   }
 }
 
@@ -17,5 +16,30 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-right: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 311px;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    margin-right: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 313px;
+  }
+}
+
+.page-footer__logo-icon {
+  &:hover {
+    fill: $downy;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

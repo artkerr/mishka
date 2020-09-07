@@ -1,5 +1,5 @@
 .button {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -10,9 +10,14 @@
   &:hover {
     background-color: $charcoal;
     color: $white;
+    transition: all 0.5s ease;
   }
 
   &:active {
     color: $white-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }

@@ -1,5 +1,9 @@
 .social {
   padding: 15px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__list {
@@ -8,8 +12,14 @@
   list-style: none;
   width: 260px;
   border-bottom: 1px solid $whisper-2;
-  padding: 10px 60px 15px 60px;
+  padding: 10px 60px 17px 60px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 140px;
+    border: none;
+  }
 }
 
 .social__item {

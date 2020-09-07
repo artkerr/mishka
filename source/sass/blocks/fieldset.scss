@@ -1,0 +1,150 @@
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--gray-bg {
+    @media (min-width: $tablet-width) {
+      background-color: $white-smoke;
+      width: 100%;
+    }
+  }
+}
+
+.fieldset__wrapper {
+  padding: 30px;
+  padding-bottom: 0;
+  position: relative;
+
+  &--color-list {
+    padding-top: 36px;
+  }
+
+  &--user-data {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 50px 11px 50px;
+    display: flex;
+    align-items: flex-start;
+
+    &--type-list {
+      padding-bottom: 38px;
+    }
+
+    &--user-contacts {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 50px 11px 110px;
+
+    &--type-list {
+      padding-bottom: 35px;
+
+      .fieldset__title {
+        margin-top: 16px;
+      }
+    }
+
+    &--color-list {
+      .fieldset__title {
+        margin-top: 5px;
+      }
+    }
+
+    &--user-contacts {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.fieldset__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $downy;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    left: 60px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $downy;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    overflow: visible;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.fieldset__type {
+  margin: 0;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: -30px;
+    margin-left: 149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 97px;
+    margin-top: -15px;
+  }
+}
+
+.fieldset__color {
+  margin-top: 26px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 121px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 69px;
+    margin-top: -7px;
+  }
+}
+
+.fieldset__user-data {
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    flex: 1 1 auto;
+    margin-left: 125px;
+    margin-top: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+  }
+}
+
+.fieldset__contacts {
+  margin-top: 6px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    flex: 1 1 auto;
+  }
+}

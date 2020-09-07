@@ -128,13 +128,11 @@ exports.jsMin = jsMin;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/*.html", gulp.series(htmlMin));
+  gulp.watch("source/js/*.js", gulp.series(jsMin));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 /*
 const build = () => {
@@ -155,5 +153,5 @@ exports.build = gulp.series(
 );
 
 exports.start = gulp.series(
-  exports.build, server
+  exports.build, server, watcher
 );

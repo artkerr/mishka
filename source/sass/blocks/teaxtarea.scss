@@ -1,0 +1,68 @@
+.textarea {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.textarea__textarea {
+  border: 2px solid $black;
+  width: 260px;
+  height: 142px;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+  padding: 15px;
+  margin-top: 12px;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $black-30;
+  }
+
+  &:hover {
+    border-color: $downy;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -15px;
+    width: 501px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -15px;
+    width: 700px;
+  }
+}
+
+.textarea__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $downy;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: $downy;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    margin-right: 53px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 75px;
+  }
+}

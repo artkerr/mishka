@@ -1,13 +1,34 @@
-.page-main {
-  background-color: transparent;
-}
-
-.page-main__contact {
-  margin-bottom: 20px;
-}
 
 .page-main__category {
   @media (min-width: $tablet-width) {
+    margin-top: -49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -62px;
+  }
+}
+
+.page-main__about {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.page-main__header {
+  @media (min-width: $tablet-width) {
     margin-top: -50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -63px;
+  }
+}
+
+.page-main__wrapper {
+  margin-bottom: 10px;
 }

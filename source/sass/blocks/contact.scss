@@ -5,20 +5,24 @@
     position: relative;
     max-width: $desktop-width;
     margin: 0 auto;
+    padding-top: 68px;
+    padding-bottom: 95px;
   }
 }
 
 .contact__wrapper {
   padding: 30px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 50px;
+    padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
     margin: 0;
-    padding-left: 100px;
+    padding-left: 225px;
+    padding-top: 61px;
   }
 }
 
@@ -30,6 +34,27 @@
 
   @media (min-width: $tablet-width) {
     @include subtitle;
+    margin-top: 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 3px;
+      top: -25px;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat center / 47px 81px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+
+    &::after {
+      left: -113px;
+      top: -16px;
+    }
   }
 }
 
@@ -42,10 +67,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-start;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-top: 35px;
   }
 }
 
@@ -58,12 +85,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 45%;
+    flex-basis: 50%;
+    font-size: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
   }
 }
 
 .contact__name {
   width: 77px;
+  line-height: 32px;
 }
 
 .contact__link {
@@ -82,6 +115,20 @@
     background-color: $downy-3;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -3px;
+    }
+  }
+
   &:hover {
     color: $puerto-rico-2;
   }
@@ -96,6 +143,10 @@
 .contact__text {
   margin: 0;
   max-width: 145px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
 }
 
 .contact__iframe-map {
@@ -110,19 +161,29 @@
 }
 
 .contact__button {
-  padding: 14px 56px;
+  display: inline-block;
+  padding: 9px 49px;
   color: $charcoal;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 39px;
+  }
 }
 
 .contact__button-wrapper {
-  padding: 30px;
+  margin-top: 18px;
+  margin-bottom: 39px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    margin-bottom: 58px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
+    bottom: 46px;
+    left: 170px;
     width: 340px;
   }
 }
