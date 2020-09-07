@@ -16,8 +16,8 @@
     margin-bottom: 17px;
   }
 
-   &:nth-child(3) .goods__name {
-     margin-top: -2px;
+  &:nth-child(3) .goods__name {
+    margin-top: -2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -40,7 +40,6 @@
       margin-top: 0;
     }
   }
-
 }
 
 .goods__img {

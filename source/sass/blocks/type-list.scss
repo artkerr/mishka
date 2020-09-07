@@ -5,7 +5,9 @@
 
 .type-list__item {
   position: relative;
+
   @include form-label;
+
   padding: 11px 0 6px 60px;
   max-width: 220px;
 

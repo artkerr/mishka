@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      left: 0px;
+      left: 0;
       background-size: 1150px 100%;
     }
   }
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-   padding-bottom: 100px;
-   padding-top: 103px;
+    padding-bottom: 100px;
+    padding-top: 103px;
   }
 }
