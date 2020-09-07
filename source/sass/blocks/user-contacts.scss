@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 132px;
+    width: 114px;
   }
 }
 
@@ -91,8 +91,12 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 20px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 700px;
+    }
   }
 
   &:hover {
@@ -134,10 +138,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 10px;
+    right: 183px;
 
     &--email {
-      right: 6px;
+      right: 180px;
     }
   }
 }

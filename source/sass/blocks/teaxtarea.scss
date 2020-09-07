@@ -62,7 +62,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 115px;
+  @media (min-width: $desktop-width) {
+    margin-right: 75px;
   }
 }
