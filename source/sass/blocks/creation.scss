@@ -64,10 +64,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   border: none;
   cursor: pointer;
   background-color: transparent;
+  padding: 0;
 }
 
 .creation__icon {
@@ -109,7 +110,7 @@
   @media (min-width: $tablet-width) {
     grid-row: 2;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 32px;
     padding-left: 105px;
 
     &::before {
@@ -145,7 +146,7 @@
     grid-column: 5 / 7;
     grid-row: 2 / 3;
     padding-top: 20px;
-    padding-left: 64px;
+    padding-left: 63px;
   }
 }
 
@@ -168,13 +169,14 @@
 
 .creation__button {
   padding: 9px 19px;
-  font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 9px 221px;
+    padding: 9px 220px;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 9px 44px;
+    padding: 9px 43px;
+    margin-left: 0;
   }
 }
