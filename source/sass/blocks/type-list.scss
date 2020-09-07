@@ -4,27 +4,35 @@
 }
 
 .type-list__item {
+  position: relative;
   @include form-label;
-  padding: 12px 0 12px 60px;
+  padding: 11px 0 6px 60px;
   max-width: 220px;
+
+  &:nth-child(2) {
+    padding-top: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     padding: 29px 0 29px 60px;
     max-width: 100%;
+
+    &:nth-child(2) {
+      padding-top: 29px;
+    }
   }
 }
 
 .type-list__label {
-  position: relative;
   cursor: pointer;
 
   &::before {
     position: absolute;
-    left: -60px;
-    top: -10px;
+    left: 0;
+    top: 7px;
     content: "";
-    width: 41px;
+    width: 42px;
     height: 41px;
     border: 2px solid $charcoal;
     border-radius: 50%;
@@ -32,8 +40,8 @@
     @media (min-width: $tablet-width) {
       width: 51px;
       height: 51px;
-      left: -77.5px;
-      top: -13px;
+      left: -17px;
+      top: 12px;
     }
 
     @media (min-width: $desktop-width) {
@@ -57,8 +65,8 @@
 
 .type-list__input:checked + .type-list__label {
   &::before {
-    left: -60px;
-    top: -3px;
+    left: 0;
+    top: 7px;
     content: "";
     width: 41px;
     height: 41px;
@@ -68,8 +76,8 @@
     @media (min-width: $tablet-width) {
       width: 51px;
       height: 51px;
-      left: -77.5px;
-      top: -13px;
+      left: -17px;
+      top: 12px;
     }
 
     @media (min-width: $desktop-width) {
@@ -79,8 +87,8 @@
 
   &::after {
     position: absolute;
-    top: 10px;
-    left: -47px;
+    top: 20px;
+    left: 13px;
     content: "";
     width: 16px;
     height: 16px;
@@ -90,8 +98,8 @@
     @media (min-width: $tablet-width) {
       width: 19px;
       height: 19px;
-      left: -61px;
-      top: 4px;
+      left: 0;
+      top: 28px;
     }
 
     @media (min-width: $desktop-width) {

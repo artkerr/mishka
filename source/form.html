@@ -59,10 +59,10 @@
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="order__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend-type">Тип</legend>
-            <div class="form__fieldset-wrapper container">
-              <ul class="form__type type-list">
+          <fieldset class="form__fieldset fieldset">
+            <div class="fieldset__wrapper fieldset__wrapper--type-list container">
+              <h3 class="fieldset__title">Тип</h3>
+              <ul class="fieldset__type type-list">
                 <li class="type-list__item">
                 <input class="type-list__input visually-hidden" type="radio" name="type" id="interior" value="interior" checked>
                 <label class="type-list__label" for="interior">Аксессуар для интерьера</label>
@@ -74,10 +74,10 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--gray-bg">
-            <legend class="form__legend">Цвет</legend>
-            <div class="form__fieldset-wrapper container">
-              <ul class="form__color color-list">
+          <fieldset class="form__fieldset fieldset fieldset--gray-bg">
+            <div class="fieldset__wrapper fieldset__wrapper--color-list container">
+              <h3 class="fieldset__title">Цвет</h3>
+              <ul class="fieldset__color color-list">
                 <li class="color-list__item">
                   <input class="color-list__input visually-hidden" type="checkbox" name="color" id="white" value="white" checked>
                   <label class="color-list__label" for="white">Белый</label>
@@ -105,10 +105,10 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ФИО</legend>
-            <div class="form__fieldset-wrapper container">
-              <ul class="form__user-data user-data">
+          <fieldset class="form__fieldset fieldset">
+            <div class="fieldset__wrapper fieldset__wrapper--user-data container">
+              <h3 class="fieldset__title">Фио</h3>
+              <ul class="fieldset__user-data user-data">
                 <li class="user-data__item">
                   <label class="user-data__label" for="first-name">Имя:</label>
                   <input class="user-data__input" type="text" name="user-data" id="first-name" required placeholder="Введите ваше имя*">
@@ -124,10 +124,9 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--gray-bg">
-            <legend class="form__legend visually-hidden">Контакты</legend>
-            <div class="form__fieldset-wrapper container">
-              <ul class="form__contacts user-contacts">
+          <fieldset class="form__fieldset fieldset fieldset--gray-bg">
+            <div class="fieldset__wrapper fieldset__wrapper--user-contacts container">
+              <ul class="fieldset__contacts user-contacts">
                 <li class="user-contacts__item">
                   <label class="user-contacts__label " for="phone">Тел</label>
                   <input class="user-contacts__input" type="text" name="user-contacts" id="phone" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
@@ -145,9 +144,9 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="textarea__label" for="message">Доп</label>
-            <div class="form__fieldset-wrapper textarea container">
+          <fieldset class="form__fieldset fieldset">
+            <div class="fieldset__wrapper textarea container">
+              <label class="textarea__label" for="message">Доп</label>
               <textarea class="textarea__textarea" name="user-contacts" id="message" placeholder="Опишите все ваши пожелания к заказу">
               </textarea>
             </div>

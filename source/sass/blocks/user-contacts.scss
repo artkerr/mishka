@@ -1,11 +1,6 @@
 .user-contacts {
   list-style: none;
   padding: 0;
-  padding-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    width: 815px;
-  }
 }
 
 .user-contacts__item {
@@ -25,7 +20,7 @@
   }
 
   &:first-child {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   &:nth-child(2) {
@@ -43,7 +38,7 @@
     }
 
     &:first-child {
-      margin-bottom: 41px;
+      margin-bottom: 39px;
     }
   }
 }
@@ -58,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     width: 222px;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +82,7 @@
     padding: 0;
     padding-left: 18px;
     padding-bottom: 13px;
-    margin-top: -6px;
+    margin-top: -4px;
 
     &::placeholder {
       font-size: 19px;
