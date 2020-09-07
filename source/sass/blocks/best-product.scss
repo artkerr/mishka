@@ -19,7 +19,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 135px auto auto;
     padding-top: 55px;
-    padding-bottom: 8px;
+    padding-bottom: 86px;
   }
 }
 
@@ -38,7 +38,7 @@
     grid-row: 1;
     max-width: 100px;
     justify-self: center;
-    margin-top: 5px;
+    margin-top: 4px;
     margin-left: 41px;
     line-height: 17px;
   }
@@ -47,7 +47,7 @@
     grid-column: 1;
     grid-row: 1;
     margin: 0;
-    margin-top: 85px;
+    margin-top: 82px;
     margin-left: -8px;
   }
 }
@@ -61,13 +61,13 @@
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1 / 4;
+    margin-top: -1px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 2 / 6;
-    margin-top: 18px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     z-index: 1;
     align-self: end;
   }
@@ -84,7 +84,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
     padding: 0;
-    margin-top: 35px;
+    margin-top: 32px;
   }
 }
 
@@ -136,17 +136,21 @@
 
 .best-product__property {
   width: 57px;
+  margin-top: -2px;
 
   @media (min-width: $desktop-width) {
-   margin-top: 10px;
+   margin-top: -3px;
+   width: 58px;
   }
 }
 
 
 .best-product__value {
+  margin-top: -2px;
+
   @media (min-width: $desktop-width) {
-   margin-top: -2px;
-  }
+    margin-top: -3px;
+   }
 }
 
 
@@ -157,7 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 15px;
+    margin-top: 13px;
     grid-column: 4 / 7;
     grid-row: 1 / 4;
   }
@@ -204,16 +208,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 52px;
   }
 }
 
 .best-product__button {
-  padding: 8px 82px;
+  padding: 8px 80px;
   line-height: 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 9px 99.5px;
+    padding: 9px 99px;
   }
 
   @media (min-width: $desktop-width) {
