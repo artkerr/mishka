@@ -74,6 +74,11 @@
     color: $black-30;
   }
 
+  &:focus {
+    outline: 2px solid $downy-3;
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;

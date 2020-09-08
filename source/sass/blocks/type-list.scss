@@ -123,3 +123,8 @@
     }
   }
 }
+
+.type-list__input:focus + .type-list__label  {
+  outline: 2px solid $downy-3;
+  outline-offset: 5px;
+}

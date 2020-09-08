@@ -24,6 +24,11 @@
     border-color: $downy;
   }
 
+  &:focus {
+    outline: 2px solid $downy-3;
+    outline-offset: -1px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: -15px;
     width: 501px;
