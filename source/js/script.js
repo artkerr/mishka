@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var popupLinks = document.querySelectorAll('.modal__open');
+var popupLinks = document.querySelectorAll('.button__modal-open');
 var popup = document.querySelector('.modal');
 
 // Mobile menu
