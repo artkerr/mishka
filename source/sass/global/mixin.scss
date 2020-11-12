@@ -28,6 +28,11 @@
     opacity: 0.6;
   }
 
+  &:disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
+
   &:active {
     opacity: 0.3;
   }
