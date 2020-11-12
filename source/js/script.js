@@ -7,7 +7,7 @@ var popup = document.querySelector('.modal');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function() {
+navToggle.addEventListener('click',() => {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
@@ -20,16 +20,15 @@ navToggle.addEventListener('click', function() {
 // Modal
 
 if (popupLinks.length > 0) {
-  for ( var i = 0; i < popupLinks.length; i++) {
-    var popupLink = popupLinks[i];
-    popupLink.addEventListener('click', function (evt) {
+  popupLinks.forEach((link) => {
+    link.addEventListener('click', (evt) => {
       evt.preventDefault();
       popup.classList.add('modal--show');
     });
-  };
+  })
 };
 
-popup.addEventListener ('click', function (evt) {
+popup.addEventListener ('click', (evt) => {
   if (!evt.target.closest('.modal__window')) {
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
@@ -37,8 +36,8 @@ popup.addEventListener ('click', function (evt) {
   };
 });
 
-document.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
     evt.preventDefault();
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
