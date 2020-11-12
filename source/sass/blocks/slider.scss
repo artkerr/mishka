@@ -1,0 +1,9 @@
+
+.slider {
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  transition: .5s ease-in-out;
+}
