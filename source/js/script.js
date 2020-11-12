@@ -61,28 +61,23 @@ const movePosition = slidesToScroll * itemWidth;
 sliderItem.forEach((item) => item.style.minWidth = `${itemWidth}px`);
 
 prevButton.addEventListener('click', () => {
-
   position += movePosition;
   setPosition();
   checkButton();
-})
+});
 
 nextButton.addEventListener('click', () => {
   position -= movePosition;
   setPosition();
   checkButton();
-})
+});
 
 const setPosition = () => {
   sliderList.style.transform = `translateX(${position}px)`;
-}
-
+};
 
 const checkButton = () => {
-
   prevButton.disabled = position === 0;
   nextButton.disabled = position <= -(sliderItem.length - slidesToShow) * itemWidth;
-
-
 };
 checkButton()
